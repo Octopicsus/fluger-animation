@@ -122,6 +122,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  position: relative;
 }
 body .gamer-mind {
   width: 400px;
@@ -155,6 +156,11 @@ body .gamer-mind .square .square-shape {
   fill: white;
   stroke-width: 5px;
   stroke: grey;
+}
+body .logo {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
 }
 
 @keyframes pslogo {
