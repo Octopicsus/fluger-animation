@@ -1,0 +1,77 @@
+@import '_reset';
+
+
+body {
+    background-color: rgb(35, 38, 44);
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    height          : 100vh;
+
+    .gamer-mind {
+        width    : 400px;
+        display  : flex;
+        flex-wrap: wrap;
+        gap      : 50px;
+        animation: pslogo 4s infinite;
+        animation-timing-function: ease-in-out;
+
+        .circle-shape {
+            fill        : white;
+            stroke-width: 3px;
+            stroke      : grey;
+        }
+
+        .triangle-shape {
+            fill        : white;
+            stroke-width: 3px;
+            stroke      : grey;
+        }
+
+        .crosshair {
+            animation: fluger 2s infinite;
+            .line-shape {
+                stroke      : white;
+                stroke-width: 30px;
+            }
+        }
+
+        .square {
+            margin-left: 18px;
+
+            .square-shape {
+                fill        : white;
+                stroke-width: 5px;
+                stroke      : grey;
+            }
+        }
+    }
+}
+
+
+@keyframes pslogo {
+
+    0% {
+        scale: 0.4;
+    }
+
+    50% {
+        scale: 0.8;
+    }
+
+    100%{
+        scale: 0.4;
+    }
+}
+
+
+@keyframes fluger{
+
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
